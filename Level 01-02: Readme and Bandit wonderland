@@ -15,25 +15,14 @@ Find the Readme.txt. This is looking like a Coding version of Alice in wonderlan
 
 ## 🧠 My Initial Understanding
 
-What did I think the problem was asking?
+This level was much simpler to handle, even for a script kiddie like me: get in, open list, deploy concatanation, harvesting password
 
-What did I notice first?
+## What did I notice first?
 
----
-
-## 🔎 Investigation
-
-What did I inspect?
-
-What clues did I find?
-
-What made me choose the next step?
-
----
+bandit terminal changes when the level changes. It takes the name of the previous ternimal you just cleared. 
+eg: if one proceeded from 0 to 1, username will be bandit0@bandit, from 1 to 2 it becomes bandit1@bandit.
 
 ## 💻 Commands Used
+command 1: ls- opens the list of the files inside a directory
+command 2: cat- opens the file
 
-```bash
-command 1
-command 2
-command 3
