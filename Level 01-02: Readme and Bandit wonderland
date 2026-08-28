@@ -1,0 +1,39 @@
+# Bandit Level 1
+
+## Goal
+Find the Readme.txt. This is looking like a Coding version of Alice in wonderland
+
+## My journey
+1. Log in with ssh bandit@bandit... ---> and fail
+2. Then wondering what went wrong in the Banditverse.
+3. Run to chatgpt panicking and crying then actually figuring out I wrote the address wrong: It's bandit0@bandit... 
+4. After a successful login, do the most sensible thing in the world: open what's inside directory. In Linux Language "ls"
+5. There you have it, the solitary "readme.txt" 
+6. Then deploy the feline-in-command: "cat readme"
+7. HARVEST THE PASSWORD, you have cleared Level 2, the wonderland awaits.
+---
+
+## 🧠 My Initial Understanding
+
+What did I think the problem was asking?
+
+What did I notice first?
+
+---
+
+## 🔎 Investigation
+
+What did I inspect?
+
+What clues did I find?
+
+What made me choose the next step?
+
+---
+
+## 💻 Commands Used
+
+```bash
+command 1
+command 2
+command 3
