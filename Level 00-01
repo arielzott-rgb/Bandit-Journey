@@ -1,0 +1,50 @@
+Level 00-01 
+##goal: the ssh discovery. 
+in normie terms, it creates a secure tunnel from your Linux terminal to Overthewire so you can play Bandit game in a secure environment.
+
+## My journey
+-Step 1: actually searching what SSH means: It was the secure shell, a doorway to Bandit system
+-Step 2: using the username and password to get into the system.
+-Step 3: opening the actual terminal  with ctrl+alt+t --> ssh.bandit@bandit.labs.overthewire.org<space> -p2220 ---> password
+-step 4: enter: yes
+-step 5: the moment you enter password, bandit0@bandit/ root shows up in green. 
+
+#hiccups and troubleshooting (this is important for reducing those tech driven panic attacks)
+-1: scenario 1: ctrl+alt+t not automatically working.
+its generally a "ghost session trap". closing and opening does the trick.
+open Ubuntu --> type "terminal" into search bar, log in fresh with: ssh bandit@bandit.
+
+2: scenario 2: if command not found 
+copy-paste trap and clean the terminal
+then type manually: ssh bandit@bandit full address mentioned above.
+It may require SSH install if Ubuntu terminal is new.
+type: sudo apt update && sudo apt install openssh -client -y
+
+3: scenario 3: if name server still not found: same process-->clear window (type clear and press enter)---> type carefully
+
+4: scenario 4: alternate IP connection route
+clear screen and type:
+ssh -p2220 bandit@176.9.9.172
+should come with a handshake: type YES and then press enter.
+
+##what new things I learned?
+1. Tool: (main command)= ssh
+2: modification (details)= -p 2220
+3: point of tool (destination)= bandit@bandit.labs.overthewire.org
+
+##what does the tool do?
+1: The action: main command: SSH (secure shell) is a pre installed app to build and slowly connect between one laptop to other remote terminal
+(think like digital immigration paper but with Shawshank Redemption arc)
+2: User Identity: the bandit0. 
+3: the connector: @, kind of self explanatory if you handle any kind of digital mail id at this point
+4: The address: the entire "ssh bandit0@bandit..." its like a url but on closed terminal. if address fails, IP address: 176.9.9.172 works too. 
+5: Component: "-p" the port: the exact digital doorway to seek where the digital doorway must connect.
+6: The detail: 2220, the door number equivalent in Bandit universe, which gives it the final detail.
+
+when everything is done: harvest the password which is usually single lined written in white. 
+
+##what I learned so far
+1: The cyber security and real world lingo still translates poorly, even with LLM assisance.
+2: Using AI as a tutor takes massive edge off the pressure of the learning curve
+3: Its okay to ask "what's the point of learning" and "what does it do?" trust me I don't know either. Even Buddha didn't get Nirvana before 6 years 
+4: Youtube walkthrows are good, hands on practice and "write that down" mindset is better
